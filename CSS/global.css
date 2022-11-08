@@ -47,7 +47,7 @@ main{
     flex-direction: column;
     border-radius: 50px 50px 0 0;
     position: relative;
-    margin-top: -873px;  
+    margin-top: -863px; 
 }
   
 .title{
@@ -162,16 +162,8 @@ footer{
 footer img{
 	width: 115px;
     margin: 30px auto;
-    margin-bottom: 29px;
+    margin-bottom: 8px;
     margin-left: 32px;
-}
-
-footer h2{
-	color: white;
-	font-family: Shrikhand;
-    font-size: 1em;
-	padding-top: 13px;
-    padding-left: 32px;
 }
 
 footer a{
@@ -185,6 +177,7 @@ footer h3{
 	margin-left: 70px;
     margin-top: 2px;
     position: absolute;
+    font-size: 1em;
 }
 
 .suggestion, .partnership{
@@ -194,15 +187,15 @@ footer h3{
 
 .fa-utensils, .fa-handshake-angle{
 	padding-bottom: 11px;
-	margin-left: -113px;
+	margin-left: -95px;
 	line-height: 1.5;
 }
 
 footer p{
-	margin-top: 4px;
+	margin-top: -17px;
     line-height: 3;
-    margin-bottom: -66px;
-    font-size: 22px;
+    margin-bottom: -74px;
+    font-size: 1em;
     padding-left: 33px;
 }
 
