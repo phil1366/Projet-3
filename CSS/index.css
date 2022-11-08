@@ -1,0 +1,362 @@
+html{
+	font-family: 'Roboto', 'Shrikhand', Arial, Helvetica, sans-serif;
+}
+
+body{
+	margin: 0;
+	font-family: 'Roboto';
+	text-align: center;
+	width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+                   /*HEADER*/
+header{
+	background: white;
+	box-shadow: 0 4px 5px rgb(10 0 0 / 25%);
+	height: 95px;
+}
+
+.logo{
+	width: 200px;
+    margin: 30px auto;
+	margin-bottom: -24px;
+}
+
+form{
+	background: rgb(223, 221, 221);
+	margin-top: 45px;
+}
+
+form .fa-location-dot{
+	font-size: 25px;
+    margin-left: -181px;
+    line-height: 3;
+    margin-top: -8px;
+}
+
+header h3{
+    font-size: 1.2em;
+    padding-bottom: 25px;
+    margin-top: -48px;	
+}			   
+
+                    /* HERO */
+
+#hero{
+	background: rgb(243, 239, 240);
+    width: 100%;
+	margin-top: 30px;
+}	
+
+h1{
+	font-size: 2em;
+	padding-top: 53px;
+}
+
+#hero p{
+	font-size: 19px;
+    text-align: center;
+    opacity: 0.4;
+    padding-left: 0;
+}
+
+button{
+	padding: 20px;
+    color: white;
+    background: linear-gradient(#ff79da, #9356dc);
+    border-radius: 46px;
+    margin-top: 63px;
+    margin-bottom: 59px;
+    height: 62px;
+    width: 250px;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+}
+
+                  /* FONCTIONNEMENT */
+
+#Fonctionnement{
+	display: flex;
+    flex-direction: column;
+    align-items: start;
+	margin-bottom: 40px;
+}	
+
+#Fonctionnement h2, #restaurants h2{
+	font-size: 1.7em;
+	padding-top: 40px;
+	padding-left: 4.5%;
+}
+
+#Fonctionnement_nav{
+    width: 100%;
+}
+
+.Fonctionnement_nav_btn{
+	background: #f8f4f4;
+    width: 88%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-bottom: 31px;
+    border-radius: 18px;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+}
+
+.fa-mobile-screen, .fa-list, .fa-store{
+	font-weight: 900;
+    font-size: 22px;
+    margin-left: 30px;
+	color: gray;
+}
+
+.Fonctionnement_nav_btn h3{
+	margin-left: 17px;
+    color: black;
+}
+
+.Fonctionnement_nav_btn:hover{
+	background-color: #e4d9e1;
+}
+
+.Fonctionnement_nav_btn span{
+	background: #9356dc;
+    border-radius: 20px;
+    width: 28px;
+    height: 29px;
+    color: white;
+    line-height: 1.8;
+    margin-left: -15px;
+}
+
+                  /*RESTAURANTS*/  
+
+#restaurants{
+	display: flex;
+	flex-direction: column;
+    align-items: start;
+	background: rgb(238, 235, 235);
+}
+
+.restaurants_cities{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.restaurants_cities_card{
+    margin: 0 auto;	
+    width: 92%;
+    position: relative;
+	height: 200px;
+    background: white;
+    border-radius: 20px;
+    padding-bottom: 84px;
+    margin-bottom: 36px;
+	box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+}
+
+.restaurants_cities_card img{
+    height: 200px;	
+	object-fit: cover;
+	border-radius: 20px 20px 0 0;
+}
+
+.restaurants_cities_card a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.restaurants_cities_card h3{
+    font-size: 1.3em;
+    margin-top: 13px;
+}
+
+.restaurants_cities_card p{
+	font-size: 1.1em;
+    color: gray;
+    padding-top: 18px;
+}
+
+.restaurants_cities_card h3, p{
+    text-align: left;
+	padding-left: 20px;
+	margin-bottom: -30px;
+}
+
+.restaurants_cities_card h4{
+    background: #99e2d0;
+	color: rgb(40, 137, 85);
+	border-radius: 3px;
+	padding: 11px 25px;
+	font-size: 22px;
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+
+.restaurants_cities_card span{
+    position: absolute;
+    background: #99e2d0;
+    padding: 8px;
+    width: 70px;
+    top: 14px;
+    right: 11px;
+}
+
+.fa-heart{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 19px;
+    font-size: 30px;
+    margin-top: -50px;
+}
+
+                   /*FOOTER*/
+
+footer{
+	display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+    background: rgb(83, 80, 80);
+    font-size: 15px;
+    height: 240px;
+}
+
+footer img{
+	width: 115px;
+    margin: 30px auto;
+    margin-bottom: 29px;
+    margin-left: -20px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer li{
+    margin-top: -11px;
+}
+
+.fa-utensils, .fa-handshake-angle{
+    font-size: 1em;
+    padding-bottom: 33px;
+    margin-left: -124px;
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+	margin-bottom: 50px;
+	margin-top: 16px;
+}
+
+footer h3{
+	margin-left: 20px;
+    margin-top: -52px;
+    position: absolute;
+}
+
+footer span{
+    display: flex;
+	margin-left: -10px;
+	font-size: 17px;
+    margin-top: -17px;
+}
+
+.mail{
+    display: flex;
+    margin-left: -9px;
+    margin-top: 13px;
+    font-size: 17px;
+}
+
+                /* mmedia queries */
+
+                   /* Tablette */
+                 
+@media (min-width: 769px) and (max-width: 992px){
+    .restaurants_cities{
+        display: flex;
+        flex-wrap: wrap;
+    }  
+    .restaurants_cities_card{
+        flex: 0 0 45%;
+    }      
+    footer img{
+        padding-bottom: 10px;
+        margin-left: -24px;
+    }
+}
+
+                /* deskktop */
+
+@media (min-width: 993px){
+    #Fonctionnement{
+        display: inline;        
+    }    
+    #Fonctionnement h2{ 
+        margin-left: -55px;
+    }
+   
+    #restaurants{               
+        display: inline-block;        
+        width: 95%;
+        height: 500px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    .restaurants_cities{
+        display: flex;
+    }
+    .restaurants_cities_card{
+        width: 24%;
+        margin: 0 10px;
+        height: 250px;
+    }
+    .restaurants_cities_card img{
+        height: 242px;
+        padding-bottom: 5px;
+    }
+    #restaurants h2{    
+        margin-left: -55px;
+    }
+    #restaurants h3{
+        font-size: 19px;
+    }    
+
+    .fa-heart{
+        font-size: 25px;
+        margin-top: -24px;
+    }
+   
+    footer{
+        display: flex;
+        padding-right: 20%;
+        padding-left: 17%;
+        align-items: center;
+        height: 290px;
+    }
+    footer img{
+        margin-bottom: 33px;
+        margin-left: 11px;
+    }
+    .fa-utensils, .fa-handshake-angle{
+        margin-left: -158px;
+    }
+    footer h3{
+        margin-left: 0;
+    }
+    footer span{
+        padding-left: 17%;        
+    }
+    .mail{
+        margin-left: 32%;        
+    }       
+}
