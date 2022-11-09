@@ -13,12 +13,6 @@ img{
 }
 
                    /*HEADER*/
-header{
-    display: flex;
-    height: 137px;
-    flex-direction: column;
-    background: white;    
-}
 
 .logo{
 	width: 100%;
@@ -29,104 +23,6 @@ header{
     padding-bottom: 14px;
     margin-bottom: 2px;
     background: white;
-}
-
-.fa-arrow-left{
-    font-weight: 900;
-    color: black;
-    font-size: 25px;
-    position: absolute;
-    left: 24px;
-    top: 36px;
-}                   
-
-                      /*MAIN*/
-
-main{
-    background: rgb(238, 235, 235);
-    flex-direction: column;
-    border-radius: 50px 50px 0 0;
-    position: relative;
-    margin-top: -863px; 
-}
-  
-.title{
-    margin-top: 992px;
-    font-family: Shrikhand;
-    font-size: 0.9em;
-    margin-left: 22px;
-    padding-top: 39px;
-    text-align: left;
-    margin-bottom: -36px;
-}
-
-.fa-heart{
-    font-size: 2em;
-    position: absolute;
-    right: 34px;
-    top: 52px;
-}
-
-main h2{
-	font-size: 20px;
-    font-weight: normal;
-    text-align: left;
-    padding-top: 48px;
-    margin-bottom: 41px;
-	border-bottom: #99e2d0 solid 3px;
-    width: 50px;
-}
-
-main h3{
-    font-weight: bolder;
-    text-align: left;
-    padding-top: 15px;
-    padding-left: 10px;
-    font-size: 21px;
-    margin-bottom: 0;
-}
-
-main p{
-    text-align: left;
-    opacity: .7;
-    padding-left: 10px;
-    margin-top: 0;
-    padding-top: 9px;
-}
-                    /* MENU */
-
-.entrees, .plats, .desserts{
-    margin: 0 auto;
-    width: 92%;
-    margin-bottom: 40px;
-}	
-
-.entree_1, .entree_2, .entree_3, .entree_4{
-    background: white;
-    border-radius: 19px;
-    box-shadow: 0 10px 15px rgb(0 0 0 / 40%);
-    height: 80px;
-    position: relative;
-}
-
-.plat_1, .plat_2, .plat_3{
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 15px rgb(0 0 0 / 40%);
-    height: 80px;
-    position: relative;
-}
-
-.dessert_1, .dessert_2, .dessert_3{
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 15px rgb(0 0 0 / 40%);
-    height: 80px;
-    position: relative;
-}
-
-.card_3:hover{
-    cursor: pointer;
 }
 
 button{
@@ -192,9 +88,6 @@ footer p{
     padding-left: 33px;
 }
 
-.email{
-	margin-left: 33px;
-}
 
 
 
