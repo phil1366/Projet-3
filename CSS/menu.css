@@ -84,6 +84,18 @@ main p{
     position: relative;
 }
 
+.entrees span, .plats span, .desserts span{
+    position: absolute;
+    top: 48px;
+    right: 35px;
+}
+
+.entree_item h3, p, .plat_item h3, p, .dessert_item h3, p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /*width: ;*/
+}
+
 .card_3:hover{
     cursor: pointer;
 }
