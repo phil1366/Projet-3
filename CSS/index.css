@@ -32,11 +32,18 @@ form{
 
 form .fa-location-dot{
 	font-size: 25px;
-    margin-left: -27px;
+    margin-left: 58px;
     line-height: 3;
     margin-top: 0;
 }
-	   
+
+form input[type="search"]{
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding-left: 10px;
+    font-weight: bolder;
+}
                     /* HERO */
 
 #hero{
@@ -118,6 +125,7 @@ button{
 .Fonctionnement_nav_btn:hover{
 	background-color: #e4d9e1;
 }
+
 
 .Fonctionnement_nav_btn span{
 	background: #9356dc;

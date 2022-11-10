@@ -82,6 +82,7 @@ main p{
     box-shadow: 0 10px 15px rgb(0 0 0 / 40%);
     height: 80px;
     position: relative;
+    
 }
 
 .entrees span, .plats span, .desserts span{
@@ -90,16 +91,40 @@ main p{
     right: 35px;
 }
 
-.entree_item h3, p, .plat_item h3, p, .dessert_item h3, p{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    /*width: ;*/
+.fa-circle-check:hover{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: translateX(-50%); 
+    transform-origin: right;    
 }
 
-.card_3:hover{
-    cursor: pointer;
+
+.fa-circle-check{
+    font-size: 25px;
+    position: absolute;
+    right: -36px;
+    top: 0;
+    background: #99E2D0;
+    width: 70px;
+    height: 81px;
+    line-height: 3.2;
+    color: white;
+    border-radius: 0 20px 17px 0;
+    opacity: 0;
+    
 }
 
 .email{
 	margin-left: 33px;
+}
+
+@keyframes appear{
+    0%{
+        transform: translateY(50%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0);
+    }
+
 }
