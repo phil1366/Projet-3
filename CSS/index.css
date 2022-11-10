@@ -184,17 +184,6 @@ button{
 	margin-bottom: -30px;
 }
 
-.restaurants_cities_card h4{
-    background: #99e2d0;
-	color: rgb(40, 137, 85);
-	border-radius: 3px;
-	padding: 11px 25px;
-	font-size: 22px;
-	position: absolute;
-	top: 0;
-	right: 20px;
-}
-
 .restaurants_cities_card span{
     position: absolute;
     background: #99e2d0;
@@ -205,12 +194,10 @@ button{
 }
 
 .fa-heart{
-    display: flex;
-    justify-content: flex-end; 
+    right: 17px;
+    top: 201px;
+    font-size: 25px;
     position: absolute;
-    font-size: 29px;
-    top: 200px;
-    right: 8px;
 }
 
                    /*FOOTER*/
