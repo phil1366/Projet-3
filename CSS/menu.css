@@ -81,8 +81,7 @@ main p{
     border-radius: 19px;
     box-shadow: 0 10px 15px rgb(0 0 0 / 40%);
     height: 80px;
-    position: relative;
-    
+    position: relative;    
 }
 
 .entrees span, .plats span, .desserts span{
@@ -90,27 +89,44 @@ main p{
     top: 48px;
     right: 35px;
 }
+/*.fa-check-circle{
+    position: absolute;
+    right: 22px;
+    top: 29px;
+    font-size: 25px;
+    opacity: 0;
+    background: #99E2D0;
+    color: white;
+    border-radius: 20px;
+}
 
-.fa-circle-check:hover{
+fa-check-circle:hover{    
     opacity: 1;
     transition-duration: 1s;
     transform: translateX(-50%); 
-    transform-origin: right;    
-}
+    transform-origin: right;
+}*/
 
 
 .fa-circle-check{
     font-size: 25px;
     position: absolute;
     right: -36px;
-    top: 0;
+    top: -1px;
     background: #99E2D0;
     width: 70px;
     height: 81px;
     line-height: 3.2;
     color: white;
     border-radius: 0 20px 17px 0;
-    opacity: 0;
+    opacity: 0;    
+}
+
+.fa-circle-check:hover{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: translateX(-50%); 
+    transform-origin: right; 
     
 }
 

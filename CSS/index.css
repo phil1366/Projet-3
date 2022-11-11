@@ -206,6 +206,16 @@ button{
     top: 201px;
     font-size: 25px;
     position: absolute;
+    margin-top: 26px;
+}
+
+div > .fa-heart{    
+    opacity: 0;
+}
+
+div > .fa-heart:hover{
+    opacity: 1;
+    cursor: pointer;         
 }
 
                    /*FOOTER*/
@@ -326,17 +336,13 @@ footer span{
     }
     
     #restaurants h2{    
-    padding-left: 0;
-    margin-bottom: 52px;
+        padding-left: 0;
+        margin-bottom: 52px;
     }
     #restaurants h3{
         font-size: 19px;
     }    
 
-    .fa-heart{
-        margin-top: 26px;
-    }
-       
     footer{
         display: flex;
         padding-right: 20%;
