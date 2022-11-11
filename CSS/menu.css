@@ -23,8 +23,15 @@ main{
     border-radius: 50px 50px 0 0;
     position: relative;
     margin-top: -863px; 
+    animation: appear;
+    animation-duration: 1s;
 }
-  
+
+@keyframes appear{
+    from {transform: translateY(800px);}
+    to {transform: translateY(0);}
+}
+
 .title{
     margin-top: 992px;
     font-family: Shrikhand;
@@ -134,13 +141,3 @@ fa-check-circle:hover{
 	margin-left: 33px;
 }
 
-@keyframes appear{
-    0%{
-        transform: translateY(50%);
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(0);
-    }
-
-}
