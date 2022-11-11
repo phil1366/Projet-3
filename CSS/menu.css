@@ -94,8 +94,18 @@ main p{
 
 .entrees{
     animation: appear;
-    animation-duration: 1s;
+    animation-duration: 1s;    
 }
+.entree_item{
+    animation-name: turn;   
+    animation-duration: 2s;
+}
+@keyframes turn{
+    0% {transform: rotate(0);}
+    100% {transform: rotate(1turn);
+    }
+}
+
 .plats{
     animation: appear;
     animation-duration: 2s;
@@ -106,9 +116,11 @@ main p{
 }
 
 @keyframes appear{
-    from {transform: translateY(800px);}
-    to {transform: translateY(0);}
+    0% {transform: translateY(800px);}
+    100% {transform: translateY(0);}
 }
+
+
 
               /* KEYFRAMES */
 
@@ -130,6 +142,10 @@ fa-check-circle:hover{
     transform-origin: right;
 }*/
 
+.entree_item{
+    animation-name: turn;   
+    animation-duration: 2s;
+}
 
 .fa-circle-check{
     font-size: 25px;
@@ -142,15 +158,15 @@ fa-check-circle:hover{
     line-height: 3.2;
     color: white;
     border-radius: 0 20px 17px 0;
-    opacity: 0;    
+    opacity: 0;      
 }
 
 .fa-circle-check:hover{
+    cursor: pointer;
     opacity: 1;
     transition-duration: 1s;
     transform: translateX(-50%); 
-    transform-origin: right; 
-    
+    transform-origin: right;        
 }
 
 .email{
