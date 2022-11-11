@@ -23,13 +23,6 @@ main{
     border-radius: 50px 50px 0 0;
     position: relative;
     margin-top: -863px; 
-    animation: appear;
-    animation-duration: 1s;
-}
-
-@keyframes appear{
-    from {transform: translateY(800px);}
-    to {transform: translateY(0);}
 }
 
 .title{
@@ -96,6 +89,29 @@ main p{
     top: 48px;
     right: 35px;
 }
+
+              /* KEYFRAMES */
+
+.entrees{
+    animation: appear;
+    animation-duration: 1s;
+}
+.plats{
+    animation: appear;
+    animation-duration: 2s;
+}
+.desserts{
+    animation: appear;
+    animation-duration: 3s;
+}
+
+@keyframes appear{
+    from {transform: translateY(800px);}
+    to {transform: translateY(0);}
+}
+
+              /* KEYFRAMES */
+
 /*.fa-check-circle{
     position: absolute;
     right: 22px;
