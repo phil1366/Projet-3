@@ -84,6 +84,10 @@ main p{
     position: relative;    
 }
 
+.entree_item:hover{
+    cursor: pointer;
+}
+
 .entrees span, .plats span, .desserts span{
     position: absolute;
     top: 48px;
@@ -119,10 +123,8 @@ main p{
     0% {transform: translateY(800px);}
     100% {transform: translateY(0);}
 }
-
-
-
               /* KEYFRAMES */
+
 
 /*.fa-check-circle{
     position: absolute;
@@ -142,11 +144,6 @@ fa-check-circle:hover{
     transform-origin: right;
 }*/
 
-.entree_item{
-    animation-name: turn;   
-    animation-duration: 2s;
-}
-
 .fa-circle-check{
     font-size: 25px;
     position: absolute;
@@ -158,15 +155,21 @@ fa-check-circle:hover{
     line-height: 3.2;
     color: white;
     border-radius: 0 20px 17px 0;
-    opacity: 0;      
+    opacity: 1;      
+}
+
+span:hover{    
+    transition-duration: 1s;
+    transform: translateX(-50%);            
+    min-width: 150px;   
 }
 
 .fa-circle-check:hover{
-    cursor: pointer;
-    opacity: 1;
     transition-duration: 1s;
     transform: translateX(-50%); 
-    transform-origin: right;        
+    transform-origin: right; 
+    opacity: 1;
+    
 }
 
 .email{

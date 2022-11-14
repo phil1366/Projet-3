@@ -201,23 +201,36 @@ button{
     right: 11px;
 }
 
-.fa-heart{
-    right: 17px;
-    top: 201px;
-    font-size: 25px;
+.fa-heart::before{
+    padding: 20px;
+}
+
+.heart{    
     position: absolute;
-    margin-top: 26px;
+    right: 0;
+    top: 200px;
+    font-size: 25px;
 }
 
-div > .fa-heart{    
+.heart .fa-solid{
+    position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
+    transition-duration: 2s;
+    background: -webkit-linear-gradient(top, #9356dc, #ff79dc);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-div > .fa-heart:hover{
+.heart:hover{
+    transform: scale(1.5);
+    transition: all 500ms;
+} 
+
+.heart:hover .fa-solid{
     opacity: 1;
-    cursor: pointer;         
 }
-
                    /*FOOTER*/
 
 footer{
