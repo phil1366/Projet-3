@@ -122,11 +122,6 @@ button{
     color: black;
 }
 
-.Fonctionnement_nav_btn:hover{
-	background-color: #e4d9e1;
-}
-
-
 .Fonctionnement_nav_btn span{
 	background: #9356dc;
     border-radius: 20px;
@@ -135,6 +130,10 @@ button{
     color: white;
     line-height: 1.8;
     margin-left: -15px;
+}
+
+.Fonctionnement_nav_btn:hover{
+	background-color: #e4d9e1;         
 }
 
                   /* RESTAURANTS */  
@@ -201,9 +200,11 @@ button{
     right: 11px;
 }
 
+                  /* COEUR ANIMATION */
+
 .fa-heart::before{
     padding: 20px;
-}
+}                  
 
 .heart{    
     position: absolute;
@@ -223,14 +224,16 @@ button{
     color: transparent;
 }
 
-.heart:hover{
+.heart:active{
     transform: scale(1.5);
-    transition: all 500ms;
+   /*transition: all 500ms;*/
+    cursor: pointer;
 } 
 
-.heart:hover .fa-solid{
-    opacity: 1;
+.heart:active .fa-solid{
+    opacity: 1;    
 }
+
                    /*FOOTER*/
 
 footer{
@@ -354,7 +357,12 @@ footer span{
     }
     #restaurants h3{
         font-size: 19px;
-    }    
+    }   
+    .heart{
+        margin-top: 30px;
+    } 
+
+                   /* FOOTER */
 
     footer{
         display: flex;
@@ -381,6 +389,6 @@ footer span{
         margin-left: 32%;
         margin-top: 15px;
         font-size: 18px;
-}        
-    }       
+    }        
+           
 
