@@ -37,57 +37,78 @@ button{
     font-size: 18px;
     border: none;
     box-shadow: 0 6px 7px rgb(0 0 0 / 30%);
+
 }
                    /*FOOTER*/
-
+                   
 footer{
 	display: flex;
     flex-direction: column;
 	align-items: flex-start;
     background: rgb(83, 80, 80);
     font-size: 20px;
-	margin-top: 0;
 }
-footer img{
-	width: 115px;
-    margin: 30px auto;
-    margin-bottom: 8px;
-    margin-left: 32px;
+
+#title_footer{
+    font-family: 'Shrikhand';
+    color: white;
+    padding: 10px 40px 30px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer li .fa-solid{
+   padding-right: 10px;   
 }
 
 footer a{
+    display: flex;
 	color: white;
 	text-decoration: none;
-	margin-bottom: 50px;
-	margin-top: 16px;
+	margin-bottom: 15px;
+	font-size: 18px;
 }
 
-footer h3{
-	margin-left: 70px;
-    margin-top: 2px;
-    position: absolute;
-    font-size: 1em;
+footer span{
+    display: flex;
+	font-size: 18px;
 }
 
-.suggestion, .partnership{
-	display: flex;
-	flex-direction: column;    
+.mail{
+    display: flex;
+    margin-top: 13px;
 }
 
-.fa-utensils, .fa-handshake-angle{
-	padding-bottom: 11px;
-	margin-left: -95px;
-	line-height: 1.5;
+               /* Media queries */
+ 
+                  /* Tablette */
+
+@media (min-width: 769px) and (max-width: 992px){
+    footer{
+        align-items: center;
+    }    
+    footer span{
+        padding-left: 8%;
+    }
+    .mail{
+        justify-content: center;
+        margin-right: 22%;
+    }
+}    
+
+                 /* deskktop */
+
+@media (min-width: 993px){
+    footer{
+        align-items: center;
+    }    
+    footer span{
+        padding-left: 8%;
+    }
+    .mail{
+        justify-content: center;
+        margin-right: 22%;
+    }
 }
-
-footer p{
-	margin-top: -17px;
-    line-height: 3;
-    margin-bottom: -74px;
-    font-size: 1em;
-    padding-left: 33px;
-}
-
-
-
-

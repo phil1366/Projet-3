@@ -16,18 +16,19 @@ img{
                    /*HEADER*/
 header{
 	background: white;
-	box-shadow: 0 4px 5px rgb(10 0 0 / 25%);
-	height: 90px;
+	/* box-shadow: 0 4px 5px rgb(10 0 0 / 25%); */
+	/* height: 90px; */
 }
 
 .logo{
 	width: 200px;
-    margin-bottom: -32px;
+    /* margin-bottom: -32px; */
 }
 
 form{
 	background: rgb(223, 221, 221);
-	margin-top: 45px;
+	/* margin-top: 45px; */
+    box-shadow: inset 0px 4px 5px -1px rgb(0 0 0 / 60%);
 }
 
 form .fa-location-dot{
@@ -49,12 +50,13 @@ form input[type="search"]{
 #hero{
 	background: rgb(243, 239, 240);
     width: 100%;
-	margin-top: 74px;
+	/* margin-top: 74px; */
 }	
 
 h1{
 	font-size: 2em;
 	padding-top: 53px;
+    margin:0;
 }
 
 #hero p{
@@ -132,8 +134,12 @@ button{
     margin-left: -15px;
 }
 
-.Fonctionnement_nav_btn:hover{
+.Fonctionnement_nav_btn:hover {
 	background-color: #e4d9e1;         
+}
+
+.Fonctionnement_nav_btn:hover .fa-solid{
+	color:#9356dc;        
 }
 
                   /* RESTAURANTS */  
@@ -164,9 +170,10 @@ button{
 }
 
 .restaurants_cities_card img{
-    height: 215px;	
+    height: 175px;	
 	object-fit: cover;
 	border-radius: 20px 20px 0 0;
+    object-position: bottom;
 }
 
 .restaurants_cities_card a{
@@ -198,6 +205,7 @@ button{
     width: 70px;
     top: -9px;
     right: 11px;
+    color: #1b5d4c;
 }
 
                   /* COEUR ANIMATION */
@@ -225,73 +233,16 @@ button{
 }
 
 .heart:hover{
-    transform: scale(1.5);
-   /*transition: all 500ms;*/
     cursor: pointer;
+    font-size: 35px;
 } 
 
 .heart:hover .fa-solid{
     opacity: 1;    
 }
 
-                   /*FOOTER*/
-
-footer{
-	display: flex;
-    flex-direction: column;
-	align-items: flex-start;
-    background: rgb(83, 80, 80);
-    font-size: 15px;
-    height: 240px;
-}
-
-footer img{
-	width: 115px;
-    margin: 30px auto;
-    margin-bottom: 29px;
-    margin-left: -20px;
-}
-
-footer ul{
-    list-style-type: none;
-}
-
-footer li{
-    margin-top: -11px;
-}
-
-.fa-utensils, .fa-handshake-angle{
-    font-size: 1em;
-    padding-bottom: 33px;
-    margin-left: -124px;
-}
-
-footer a{
-	color: white;
-	text-decoration: none;
-	margin-bottom: 50px;
-	margin-top: 16px;
-}
-
-footer h3{
-    margin-left: 20px;
-    margin-top: -57px;
-    position: absolute;
-    font-size: 18px;
-}
-
-footer span{
-    display: flex;
-	margin-left: -10px;
-	font-size: 18px;
-    margin-top: -17px;
-}
-
-.mail{
-    display: flex;
-    margin-left: -9px;
-    margin-top: 13px;
-    font-size: 18px;
+.heart:hover .fa-regular{
+    opacity: 0;    
 }
 
                 /* mmedia queries */
@@ -361,33 +312,5 @@ footer span{
     .heart{
         margin-top: 30px;
     } 
+}
 
-                   /* FOOTER */
-
-    footer{
-        display: flex;
-        padding-right: 20%;
-        padding-left: 17%;
-        align-items: center;
-        height: 250px;
-    }
-    footer img{
-        margin-bottom: 33px;
-        margin-left: 11px;
-    }
-    .fa-utensils, .fa-handshake-angle{
-        margin-left: -158px;
-    }
-    footer h3{
-        font-size: 18px;
-        margin-top: -56px;
-    }
-    footer span{
-        padding-left: 33px;        
-    }
-    .mail{
-        margin-left: 32%;
-        margin-top: 15px;
-        font-size: 18px;
-    }   
-        
