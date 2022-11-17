@@ -229,8 +229,7 @@ button{
     position: absolute;
     right: 20px;
     top: 194px;
-    background: -webkit-linear-gradient(260deg, #9356dc 40%, #ff79da);
-    /*background-clip: border-box;*/
+    background: -webkit-linear-gradient(260deg, #9356dc 40%, #ff79da);   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
