@@ -42,6 +42,11 @@ main{
     top: 52px;
 }
 
+h1{
+    padding-bottom: 20px;
+    padding-left: 2%;
+}
+
 main h2{
 	font-size: 20px;
     font-weight: normal;
@@ -95,7 +100,7 @@ main p{
     }
   }
   
-  .main {
+/*  .main {
     padding: 1em;
     padding-top: 2em;
     padding-bottom: 4em;
@@ -105,7 +110,7 @@ main p{
     display: flex;
     flex-direction: column;
     justify-content: center; 
-  }
+  }*/
   
   .entree_item *{ 
     margin: 0;
@@ -117,7 +122,7 @@ main p{
     animation-fill-mode: backwards;    
     display: flex;
     overflow: hidden;       
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     width: 100%;
     background-color: white;
     margin-bottom: 1em;
@@ -125,7 +130,7 @@ main p{
     box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.1);
   }
   
-  .delay-1{
+  /*.delay-1{
     animation-delay: 0s;
   }  
   .delay-2{
@@ -142,11 +147,11 @@ main p{
   }  
   .delay-6{
     animation-delay: 1.0s;
-  }  
+  }  */
   
   .entree_text{  
-    display: flex;      
-    flex-direction: column;      
+    /*display: flex;      
+    flex-direction: column;*/      
     flex: 1;
     padding: 0.6em;
     overflow: hidden;
@@ -172,8 +177,8 @@ main p{
   
   .btn{
     background-color: #99e2d0;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;  
+    /*border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;*/  
     display: flex;  
     justify-content: center;  
     align-items: center;
@@ -213,7 +218,7 @@ main p{
     background-color: #99e2d0; 
   }
 
-                    /* Animation bouton vert */
+                    /* Animation bouton vert-end */
 
                          /* KEYFRAMES */           
 

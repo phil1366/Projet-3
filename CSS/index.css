@@ -237,12 +237,12 @@ button{
 .heart:hover .coeur__2{
     font-size: 15px;
     animation: anim-coeur 3s;
-
 }
 
 .heart:hover .coeur__1{
     opacity: 0;
-}
+} 
+                  /* Animation coeur menu principal et menu restaurant-end */
 
                  /* MEDIA QUERIES */
 
