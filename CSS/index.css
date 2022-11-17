@@ -15,19 +15,15 @@ img{
 
                    /*HEADER*/
 header{
-	background: white;
-	/* box-shadow: 0 4px 5px rgb(10 0 0 / 25%); */
-	/* height: 90px; */
+	background: white;	
 }
 
 .logo{
-	width: 200px;
-    /* margin-bottom: -32px; */
+	width: 200px;    
 }
 
 form{
-	background: rgb(223, 221, 221);
-	/* margin-top: 45px; */
+	background: rgb(223, 221, 221);	
     box-shadow: inset 0px 4px 5px -1px rgb(0 0 0 / 60%);
 }
 
@@ -49,8 +45,7 @@ form input[type="search"]{
 
 #hero{
 	background: rgb(243, 239, 240);
-    width: 100%;
-	/* margin-top: 74px; */
+    width: 100%;	
 }	
 
 h1{
@@ -160,20 +155,20 @@ button{
     margin: 0 auto;
     width: 92%;
     position: relative;
-    height: 200px;
+    height: 110px;
     background: white;
     border-radius: 20px;
-    padding-bottom: 72px;
+    padding-bottom: 154px;
     margin-top: 36px;
-    margin-bottom: 60px;
+    margin-bottom: 61px;
     box-shadow: 0 0 20px rgb(0 0 0 / 30%);
 }
 
 .restaurants_cities_card img{
-    height: 175px;	
-	object-fit: cover;
-	border-radius: 20px 20px 0 0;
-    object-position: bottom;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    object-position: 0 65%;
 }
 
 .restaurants_cities_card a{
@@ -189,7 +184,7 @@ button{
 .restaurants_cities_card p{
 	font-size: 1.1em;
     color: gray;
-    padding-top: 18px;
+    padding-top: 23px;
 }
 
 .restaurants_cities_card h3, p{
@@ -202,50 +197,55 @@ button{
     position: absolute;
     background: #99e2d0;
     padding: 8px;
-    width: 70px;
-    top: -9px;
+    font-size: 19px;
+    width: 105px;
+    top: -18px;
     right: 11px;
     color: #1b5d4c;
 }
 
-                  /* COEUR ANIMATION */
+                  /* Animation coeur menu principal et menu restaurant */
 
-.fa-heart::before{
-    padding: 20px;
-}                  
-
-.heart{    
-    position: absolute;
-    right: 0;
-    top: 200px;
-    font-size: 25px;
+@keyframes anim-coeur{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-.heart .fa-solid{
+.coeur__1{
+    font-size: 15px;
     position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition-duration: 2s;
-    background: -webkit-linear-gradient(top, #9356dc, #ff79dc);
+    right: 20px;
+    top: 194px;
+}
+
+.coeur__2{
+    font-size: 0px;
+    position: absolute;
+    right: 20px;
+    top: 194px;
+    background: -webkit-linear-gradient(260deg, #9356dc 40%, #ff79da);
+    /*background-clip: border-box;*/
     -webkit-background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
-.heart:hover{
-    cursor: pointer;
-    font-size: 35px;
-} 
+.heart:hover .coeur__2{
+    font-size: 15px;
+    animation: anim-coeur 3s;
 
-.heart:hover .fa-solid{
-    opacity: 1;    
 }
 
-.heart:hover .fa-regular{
-    opacity: 0;    
+.heart:hover .coeur__1{
+    opacity: 0;
 }
 
-                /* mmedia queries */
+                 /* MEDIA QUERIES */
 
                    /* Tablette */
                  
@@ -256,7 +256,7 @@ button{
     }  
     .restaurants_cities_card{
         flex: 0 0 45%;
-        height: 205px;
+        height: 112px;
         margin-bottom: 41px;
     }  
     #restaurants h2{
@@ -295,7 +295,7 @@ button{
     .restaurants_cities_card{
         width: 24%;
         margin: 0 10px;
-        height: 230px;
+        height: 160px;
     }
     .restaurants_cities_card img{
         height: 242px;
@@ -309,8 +309,10 @@ button{
     #restaurants h3{
         font-size: 19px;
     }   
-    .heart{
-        margin-top: 30px;
-    } 
+
+    .coeur__1, .coeur__2{
+        top: 230px;
+        right: 10px;
+    }
 }
 
