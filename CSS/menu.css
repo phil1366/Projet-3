@@ -53,7 +53,6 @@ main h2{
     text-align: left;
     padding-top: 48px;
     margin-bottom: 41px;
-	  width: 50px;    
 }
 
 main h3{    
@@ -104,8 +103,7 @@ main p{
   }*/
   
   .entree_item, .plat_item, .dessert_item *{ 
-    margin: 0;
-    padding: 0;
+    margin: 0;   
   }
   
   .entree_item, .plat_item, .dessert_item{
@@ -215,7 +213,7 @@ main p{
     padding-top: 25px;
     position: relative;   
   }
-    
+  
   .entrees h2::after{
     content: "";
     position: absolute;
@@ -229,26 +227,18 @@ main p{
   .plats h2::after{
     content: "";
     position: absolute;
-    top: 578px;    
+    top: 578px; 
+    left: 3%;   
     height: 4px;
     width: 37px;
     background-color: #99e2d0; 
   }
-
-  .plats h2 span::after{
-    content: "";
-    position: absolute;
-    top: 680px;    
-    height: 4px;
-    width: 37px;
-    background-color: #99e2d0; 
-  }
-
 
   .desserts h2::after{
     content: "";
     position: absolute;
-    top: 1008px;    
+    top: 1008px;   
+    left: 3%;    
     height: 4px;
     width: 37px;
     background-color: #99e2d0;
