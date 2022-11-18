@@ -48,17 +48,17 @@ h1{
 }
 
 main h2{
-	font-size: 20px;
+	  font-size: 20px;
     font-weight: normal;
     text-align: left;
     padding-top: 48px;
     margin-bottom: 41px;
-	width: 50px;
+	  width: 50px;    
 }
 
 main h3{    
     text-align: left;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-left: 10px;
     font-size: 21px;
     margin-bottom: 0;
@@ -71,21 +71,12 @@ main p{
     margin-top: 0;
     padding-top: 9px;
 }
-                    /* MENU */
+                       /* MENU */
 
 .entrees, .plats, .desserts{
     margin: 0 auto;
-    width: 92%;
-    margin-bottom: 40px;
+    width: 95%;
 }	
-
-.plat_item, .dessert_item{
-    background: white;
-    border-radius: 19px;
-    box-shadow: 0 10px 15px rgb(0 0 0 / 40%);
-    height: 80px;
-    position: relative;    
-}
 
                /* Animation bouton vert */
 
@@ -112,16 +103,17 @@ main p{
     justify-content: center; 
   }*/
   
-  .entree_item *{ 
+  .entree_item, .plat_item, .dessert_item *{ 
     margin: 0;
     padding: 0;
   }
   
-  .entree_item{
+  .entree_item, .plat_item, .dessert_item{
     animation: SlideUp 0.5s ease-in;
     animation-fill-mode: backwards;    
     display: flex;
-    overflow: hidden;       
+    overflow: hidden;     
+    height: 89px;  
     /*justify-content: space-between;*/
     width: 100%;
     background-color: white;
@@ -149,27 +141,25 @@ main p{
     animation-delay: 1.0s;
   }  */
   
-  .entree_text{  
-    /*display: flex;      
-    flex-direction: column;*/      
+  .entree_text, .plat_text, .dessert_text{           
     flex: 1;
     padding: 0.6em;
     overflow: hidden;
-    padding-bottom: 1em;
+    /*padding-bottom: 1em;*/
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
   }
 
-  .entree_text h3, p{
-    margin-bottom: 6px;
+  .entree_text h3, p, .plat_item h3, p, .dessert_item h3, p{
+    margin-top: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
   }
 
-  .entree_item span {
-    font-weight: bold;   
+  .entree_item span, .plat_item span, .dessert_item span{
+    font-weight: bolder;   
     display: flex;      
     align-items: flex-end;
     padding: 1.3em;
@@ -194,7 +184,15 @@ main p{
     font-size: 25px;
   }
   
- .entrees .entree_item:hover .btn {
+ .entrees .entree_item:hover .btn{
+    width: 4em;
+  }
+
+  .plats .plat_item:hover .btn{
+    width: 4em;
+  }
+
+  .desserts .dessert_item:hover .btn{
     width: 4em;
   }
   
@@ -202,13 +200,23 @@ main p{
     transform: rotate(0);
     color: white;
   }
+
+  .plats .plat_item:hover .fa-circle-check{  
+    transform: rotate(0);
+    color: white;
+  }
+
+  .desserts .dessert_item:hover .fa-circle-check{  
+    transform: rotate(0);
+    color: white;
+  }
   
-  .entrees h2  {   
+  .entrees h2, .plats h2 .dessert h2{   
     padding-top: 25px;
     position: relative;   
   }
-  
-  .entrees h2::after {
+    
+  .entrees h2::after{
     content: "";
     position: absolute;
     top: 56px;
@@ -217,6 +225,35 @@ main p{
     width: 37px;
     background-color: #99e2d0; 
   }
+
+  .plats h2::after{
+    content: "";
+    position: absolute;
+    top: 578px;    
+    height: 4px;
+    width: 37px;
+    background-color: #99e2d0; 
+  }
+
+  .plats h2 span::after{
+    content: "";
+    position: absolute;
+    top: 680px;    
+    height: 4px;
+    width: 37px;
+    background-color: #99e2d0; 
+  }
+
+
+  .desserts h2::after{
+    content: "";
+    position: absolute;
+    top: 1008px;    
+    height: 4px;
+    width: 37px;
+    background-color: #99e2d0;
+  }
+  
 
                     /* Animation bouton vert-end */
 
@@ -262,7 +299,4 @@ main p{
 }
               /* KEYFRAMES */
 
-#title_footer{
-    padding: 0;
-}
   

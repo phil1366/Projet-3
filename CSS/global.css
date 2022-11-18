@@ -52,11 +52,12 @@ footer{
 #title_footer{
     font-family: 'Shrikhand';
     color: white;
-    padding: 10px 40px 30px;
+    padding: 30px 40px 0;
 }
 
 footer ul{
     list-style-type: none;
+    margin: 0;
 }
 
 footer li .fa-solid{
@@ -89,12 +90,17 @@ footer span{
     footer{
         align-items: center;
     }    
+    #title_footer{
+        padding: 10px 40px 30px;
+    } 
     footer span{
         padding-left: 8%;
-    }
+    }            
     .mail{
         justify-content: center;
         margin-right: 22%;
+        font-size: 18px;
+        line-height: 0.8;
     }
 }    
 
@@ -103,7 +109,10 @@ footer span{
 @media (min-width: 993px){
     footer{
         align-items: center;
-    }    
+    }   
+    #title_footer{
+        padding: 10px 40px 30px;
+    } 
     footer span{
         padding-left: 8%;
     }

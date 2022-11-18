@@ -244,6 +244,12 @@ button{
 } 
                   /* Animation coeur menu principal et menu restaurant-end */
 
+#title_footer{
+    font-family: 'Shrikhand';
+    color: white;
+    padding: 10px 40px 30px;
+}                  
+
                  /* MEDIA QUERIES */
 
                    /* Tablette */
@@ -261,17 +267,8 @@ button{
     #restaurants h2{
         padding-top: 9px;
         margin-bottom: 58px;
-    } 
-        
-    footer img{
-        margin-left: -24px;
-    }
-    footer h3, .mail{
-        font-size: 18px;
-        line-height: 0.8;
-    }
+    }     
 }
-
                 /* deskktop */
 
 @media (min-width: 993px){
