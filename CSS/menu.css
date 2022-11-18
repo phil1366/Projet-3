@@ -255,6 +255,11 @@ main p{
     }
 }
 
+@keyframes appear{
+  0% {transform: translateY(800px);}
+  100% {transform: translateY(0);}
+}
+
 .entrees{
     animation: appear;
     animation-duration: 1s;    
@@ -264,15 +269,8 @@ main p{
     animation-name: turn;   
     animation-duration: 2s;
 }
-@keyframes turn{
-    0% {transform: rotate(0);}
-    100% {transform: rotate(1turn);}
-}
 
-@keyframes appear{
-    0% {transform: translateY(800px);}
-    100% {transform: translateY(0);}
-}
+                /* Animation plats et desserts */
 
 .plats{
     animation: appear;
