@@ -99,16 +99,14 @@ footer span{
         margin-right: 22%;
         font-size: 18px;
         line-height: 0.8;
-    }
-}    
+    }}    
 
                  /* deskktop index */
 
 @media (min-width: 993px){
     footer{
         align-items: center;
-    }   
-    
+    }       
     footer span{
         padding-left: 8%;
     }

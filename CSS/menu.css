@@ -113,7 +113,7 @@ main p{
   }
   
   .entree_item, .plat_item, .dessert_item{
-    animation: SlideUp 0.5s ease-in;
+    animation: SlideUp 1s ease-in;
     animation-fill-mode: backwards;    
     display: flex;
     overflow: hidden;     
@@ -126,23 +126,32 @@ main p{
   }
   
   .delay-1{
-    animation-delay: 0s;
+    animation-delay: 1s;
   }  
   .delay-2{
-    animation-delay: 0.2s;
+    animation-delay: 1.2s;
   }  
   .delay-3{
-    animation-delay: 0.4s;
+    animation-delay: 1.4s;
   }  
   .delay-4{
-    animation-delay: 0.6s;
+    animation-delay: 1.6s;
   }  
   .delay-5{
-    animation-delay: 0.8s;
+    animation-delay: 1.8s;
   }  
   .delay-6{
-    animation-delay: 1.0s;
-  }  */
+    animation-delay: 2.0s;
+  }  
+  .delay-7{
+    animation-delay: 2.2s;
+  } 
+  .delay-8{
+    animation-delay: 2.4s;
+  }
+  .delay-9{
+    animation-delay: 2.6s;
+  } 
   
   .entree_text, .plat_text, .dessert_text{           
     flex: 1;
@@ -184,7 +193,7 @@ main p{
     font-size: 25px;
   }
   
- .entrees .entree_item:hover .btn{
+  .entrees .entree_item:hover .btn{
     width: 4em;
   }
 
@@ -215,21 +224,31 @@ main p{
     padding-top: 25px;
     position: relative;   
   }
-  
+
   .entrees h2::after{
-    content: "";
+    content: "";    
+    background-color: #99e2d0; 
+    height: 4px;
+    width: 37px;
     position: absolute;
     top: 56px;
     left: 0px;
-    height: 4px;
-    width: 37px;
-    background-color: #99e2d0; 
   }
 
   .plats h2::after{
     content: "";
     position: absolute;
     top: 578px; 
+    left: 3%;   
+    height: 4px;
+    width: 37px;
+    background-color: #99e2d0; 
+  }
+
+ .plats__lanote h2::after{      /* menu 3 la note enchantée */  
+    content: "";
+    position: absolute;
+    top: 683px; 
     left: 3%;   
     height: 4px;
     width: 37px;

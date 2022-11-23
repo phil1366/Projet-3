@@ -12,6 +12,25 @@ body{
 img{
     width: 100%;
 }
+                          /* LOADER */
+.loader {    
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #9356DC;
+    border-right: 16px solid #99E2D0;
+    border-bottom: 16px solid #FF79DA;
+    border-left: 16px solid #99E2D0;
+    width: 300px;
+    height: 300px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 3s linear;
+    margin-left: 77px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
                    /*HEADER*/
 header{
