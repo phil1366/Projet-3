@@ -12,7 +12,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">        
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/global.css">
     <link rel="stylesheet" type="text/css" href="CSS/menu.css">
     <title>ohmyfood</title>
@@ -28,12 +28,20 @@
     </header>
 
     <main>
-        <div class="title">
+        <section class="title">
             <h1>La palette du goût</h1>
-            <i class="fa-regular fa-heart"></i>
-        </div>
+            <div class="heart">
+                <div class="coeur__1">
+                    <i class="far fa-heart fa-2x"></i>
+                </div>
+                <div class="coeur__2">
+                    <i class="fas fa-heart fa-2x"></i>
+                </div>
+            </div>
 
-        <div class="entrees">
+        </section>
+
+        <section class="entrees">
             <h2>ENTRÉES</h2>
             <div class="entree_item">
                 <div class="entree_text">
@@ -67,9 +75,9 @@
                     <a href="#"><i class="fa-solid fa-circle-check"></i></a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="plats">
+        <section class="plats">
             <h2>PLATS</h2>
             <div class="plat_item">
                 <div class="plat_text">
@@ -103,45 +111,45 @@
                     <a href="#"><i class="fa-solid fa-circle-check"></i></a>
                 </div>
             </div>
-        </div>
+        </section>
 
-            <div class="desserts">
-                <h2>DESSERTS</h2>
-                <div class="dessert_item">
-                    <div class="dessert_text">
-                        <h3>Paris-Brest</h3>
-                        <p>Revisité</p>
-                    </div>
-                    <span>18€</span>
-                    <div class="btn">
-                        <a href="#"><i class="fa-solid fa-circle-check"></i></a>
-                    </div>
+        <section class="desserts">
+            <h2>DESSERTS</h2>
+            <div class="dessert_item">
+                <div class="dessert_text">
+                    <h3>Paris-Brest</h3>
+                    <p>Revisité</p>
                 </div>
-
-                <div class="dessert_item">
-                    <div class="dessert_text">
-                        <h3>Macaron au chocolat d'exception</h3>
-                        <p>Et glace à la vanille de Madagascar</p>
-                    </div>
-                    <span>22€</span>
-                    <div class="btn">
-                        <a href="#"><i class="fa-solid fa-circle-check"></i></a>
-                    </div>
-                </div>
-
-                <div class="dessert_item">
-                    <div class="dessert_text">
-                        <h3>Mousse au chocolat</h3>
-                        <p>Au piment d'Espelette et à la truffe noire</p>
-                    </div>
-                    <span>23€</span>
-                    <div class="btn">
-                        <a href="#"><i class="fa-solid fa-circle-check"></i></a>
-                    </div>
+                <span>18€</span>
+                <div class="btn">
+                    <a href="#"><i class="fa-solid fa-circle-check"></i></a>
                 </div>
             </div>
 
-            <button>Commander</button>
+            <div class="dessert_item">
+                <div class="dessert_text">
+                    <h3>Macaron au chocolat d'exception</h3>
+                    <p>Et glace à la vanille de Madagascar</p>
+                </div>
+                <span>22€</span>
+                <div class="btn">
+                    <a href="#"><i class="fa-solid fa-circle-check"></i></a>
+                </div>
+            </div>
+
+            <div class="dessert_item">
+                <div class="dessert_text">
+                    <h3>Mousse au chocolat</h3>
+                    <p>Au piment d'Espelette et à la truffe noire</p>
+                </div>
+                <span>23€</span>
+                <div class="btn">
+                    <a href="#"><i class="fa-solid fa-circle-check"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <button>Commander</button>
 
     </main>
 

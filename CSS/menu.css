@@ -1,9 +1,15 @@
-                   /* HEADER */
+                        /* HEADER */
 header{
     display: flex;
     height: 137px;
     flex-direction: column;
     background: white;    
+}
+
+header > img{
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .fa-arrow-left{
@@ -15,7 +21,7 @@ header{
     top: 36px;
 }                   
 
-                      /* MAIN */
+                         /* MAIN */
 
 main{
     background: rgb(238, 235, 235);
@@ -26,7 +32,7 @@ main{
 }
 
 .title{
-    margin-top: 992px;
+    margin-top: 952px;
     font-family: Shrikhand;
     font-size: 0.9em;
     margin-left: 22px;
@@ -48,7 +54,7 @@ h1{
 }
 
 main h2{
-	  font-size: 20px;
+    font-size: 20px;
     font-weight: normal;
     text-align: left;
     padding-top: 48px;
@@ -111,8 +117,7 @@ main p{
     animation-fill-mode: backwards;    
     display: flex;
     overflow: hidden;     
-    height: 89px;  
-    /*justify-content: space-between;*/
+    height: 89px;      
     width: 100%;
     background-color: white;
     margin-bottom: 1em;
@@ -120,7 +125,7 @@ main p{
     box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.1);
   }
   
-  /*.delay-1{
+  .delay-1{
     animation-delay: 0s;
   }  
   .delay-2{
@@ -142,8 +147,7 @@ main p{
   .entree_text, .plat_text, .dessert_text{           
     flex: 1;
     padding: 0.6em;
-    overflow: hidden;
-    /*padding-bottom: 1em;*/
+    overflow: hidden;    
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -164,9 +168,7 @@ main p{
   }
   
   .btn{
-    background-color: #99e2d0;
-    /*border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;*/  
+    background-color: #99e2d0;   
     display: flex;  
     justify-content: center;  
     align-items: center;
@@ -247,13 +249,7 @@ main p{
 
                     /* Animation bouton vert-end */
 
-                         /* KEYFRAMES */           
-
-@keyframes turn{         /* Animation sur les entrées */
-    0% {transform: rotate(0);}
-    100% {transform: rotate(1turn);
-    }
-}
+                         /* KEYFRAMES */         
 
 @keyframes appear{
   0% {transform: translateY(800px);}
