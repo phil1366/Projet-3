@@ -25,6 +25,62 @@ img{
     background: white;
 }
 
+                               /* Animation coeur menus*/
+
+.coeur__title{
+    position: absolute;
+    top: -145px;
+    right: 0;
+}
+
+.coeur__title:hover .coeur__2{
+    font-size: 15px;
+    animation: anim-coeur 3s;
+}
+
+.coeur__title:hover .coeur__1{
+    opacity: 0;
+} 
+                           /* Animation coeur accueil (index) */
+
+@keyframes anim-coeur{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.coeur__1{
+    font-size: 15px;
+    position: absolute;
+    right: 20px;
+    top: 194px;
+}
+
+.coeur__2{
+    font-size: 0px;
+    position: absolute;
+    right: 20px;
+    top: 194px;
+    background: -webkit-linear-gradient(260deg, #9356dc 40%, #ff79da);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heart:hover .coeur__2{
+    font-size: 15px;
+    animation: anim-coeur 3s;
+}
+
+.heart:hover .coeur__1{
+    opacity: 0;
+} 
+                          /* Animation coeur accueil (index)-end */
+
 button{
 	padding: 20px;
     color: white;

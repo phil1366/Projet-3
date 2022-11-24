@@ -223,45 +223,7 @@ button{
     color: #1b5d4c;
 }
 
-                  /* Animation coeur menu principal et menu restaurant */
 
-@keyframes anim-coeur{
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.coeur__1{
-    font-size: 15px;
-    position: absolute;
-    right: 20px;
-    top: 194px;
-}
-
-.coeur__2{
-    font-size: 0px;
-    position: absolute;
-    right: 20px;
-    top: 194px;
-    background: -webkit-linear-gradient(260deg, #9356dc 40%, #ff79da);   
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.heart:hover .coeur__2{
-    font-size: 15px;
-    animation: anim-coeur 3s;
-}
-
-.heart:hover .coeur__1{
-    opacity: 0;
-} 
-                  /* Animation coeur menu principal et menu restaurant-end */
                
 
                  /* MEDIA QUERIES */
