@@ -9,7 +9,7 @@ body{
 	width: 100%;
 }
 
-img{
+/*img{
     width: 100%;
 }
                           /* LOADER */
@@ -35,10 +35,6 @@ img{
                    /*HEADER*/
 header{
 	background: white;	
-}
-
-.logo{
-	width: 200px;    
 }
 
 form{
@@ -68,7 +64,7 @@ form input[type="search"]{
 }	
 
 h1{
-	font-size: 2em;
+	font-size: 1.5em;
 	padding-top: 53px;
     margin:0;
 }

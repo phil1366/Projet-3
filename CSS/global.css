@@ -19,10 +19,12 @@ img{
     margin: 40px auto;
     position: relative;
     margin-top: 0;
-    padding-top: 52px;
+    padding-top: 33px;
     padding-bottom: 14px;
     margin-bottom: 2px;
     background: white;
+    padding-top: 33px;
+    padding-bottom: 14px;
 }
 
                                /* Animation coeur menus*/
@@ -155,7 +157,8 @@ footer span{
         margin-right: 22%;
         font-size: 18px;
         line-height: 0.8;
-    }}    
+    }
+}    
 
                  /* deskktop index */
 
