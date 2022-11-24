@@ -13,24 +13,46 @@ img{
     width: 100%;
 }
                           /* LOADER */
-.loader {    
+body{
+    animation: appear ease-in;
+    animation-duration: 3s;
+    animation-delay: 5s;    
+}
+
+.loader{    
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #9356DC;
+    border-top: 16px solid #9356dc;
     border-right: 16px solid #99E2D0;
     border-bottom: 16px solid #FF79DA;
     border-left: 16px solid #99E2D0;
-    width: 300px;
-    height: 300px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 3s linear;
-    margin-left: 77px;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    margin-left: 40%;
+    -webkit-animation: appear 1s, spin 4s linear;   
+    animation: appear 1s, spin 4s, fade-out 3s;  
+    
+    transition-duration: 20s ease-out;   
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+@keyframes appear{
+    0% { opacity: 0;}
+    100% { opacity: 1;}
 }
+
+@keyframes fade-out{
+    100% { opacity: 1;}
+    0% { opacity: 0;}
+}
+ 
+@keyframes spin{
+    0% { transform: rotate(0deg) scale(0); }
+    50% { transform: rotate(0deg) scale(0.5)}
+    100% { transform: rotate(360deg) scale(1); }
+}
+
 
                    /*HEADER*/
 header{

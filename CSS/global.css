@@ -27,12 +27,12 @@ img{
     padding-bottom: 14px;
 }
 
-header .logo_accueil{       /* Image logo acueil */
+header .logo_accueil{            /* Image logo accueil */
     width: 200px;
     margin: 50px auto 20px;
 }      
 
-                               /* Animation coeur menus*/
+                               /* Animation coeur menus */
 
 .coeur__title{
     position: absolute;

@@ -78,7 +78,7 @@ main p{
     width: 95%;
 }	
 
-               /* Animation bouton vert */
+                /* Animation accueil */
 
 @keyframes SlideUp {  
     0% {
@@ -139,6 +139,8 @@ main p{
     animation-delay: 2.8s;
   }
   
+                        /* Animation bouton vert */
+
   .entree_text, .plat_text, .dessert_text{           
     flex: 1;
     padding: 0.6em;
