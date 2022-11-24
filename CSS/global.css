@@ -27,6 +27,11 @@ img{
     padding-bottom: 14px;
 }
 
+header .logo_accueil{       /* Image logo acueil */
+    width: 200px;
+    margin: 50px auto 20px;
+}      
+
                                /* Animation coeur menus*/
 
 .coeur__title{

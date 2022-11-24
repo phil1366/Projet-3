@@ -5,8 +5,8 @@ header{
     flex-direction: column;
     background: white;    
 }
-
-header > img{
+                        
+header > img{          /* Images menu */
   height: 213px;
   object-fit: cover;
   object-position: 0 70%;
@@ -22,7 +22,7 @@ header > img{
   top: 18px;
 }     
 
-                         /* MAIN */
+                           /* MAIN */
 
 main{
     background: rgb(238, 235, 235);
