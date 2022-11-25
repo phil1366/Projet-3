@@ -1,181 +1,181 @@
-html{
-	font-family: 'Roboto', 'Shrikhand', Arial, Helvetica, sans-serif;
+html {
+  font-family: "Roboto", "Shrikhand", Arial, Helvetica, sans-serif;
 }
 
-body{
-	margin: 0;
-	font-family: 'Roboto';
-	text-align: center;
-	width: 100%;
-}
-img{
-    margin-top: -30px;
+body {
+  margin: 0;
+  font-family: "Roboto";
+  text-align: center;
+  width: 100%;
 }
 
-                   /*HEADER*/
-
-.logo{
-	width: 100%;
-    margin: 40px auto;
-    position: relative;
-    margin-top: 0;
-    padding-top: 33px;
-    padding-bottom: 14px;
-    margin-bottom: 2px;
-    background: white;
-    padding-top: 33px;
-    padding-bottom: 14px;
+img {
+  margin-top: -30px;
 }
 
-header .logo_accueil{            /* Image logo accueil */
-    width: 200px;
-    margin: 50px auto 20px;
-}      
+                       /*HEADER*/
 
-                               /* Animation coeur menus */
-
-.coeur__title{
-    position: absolute;
-    top: -145px;
-    right: 0;
+.logo {
+  width: 100%;
+  margin: 40px auto;
+  position: relative;
+  margin-top: 0;
+  padding-top: 33px;
+  padding-bottom: 14px;
+  margin-bottom: 2px;
+  background: white;
+  padding-top: 33px;
+  padding-bottom: 14px;
 }
 
-.coeur__title:hover .coeur__2{
-    font-size: 15px;
-    animation: anim-coeur 3s;
+header .logo_accueil {    /* Image logo accueil */
+  width: 200px;
+  margin: 50px auto 20px;
 }
 
-.coeur__title:hover .coeur__1{
+                         /* Animation coeur menus */
+
+.coeur__title {
+  position: absolute;
+  top: -145px;
+  right: 0;
+}
+
+.coeur__title:hover .coeur__2 {
+  font-size: 15px;
+  animation: anim-coeur 3s;
+}
+
+.coeur__title:hover .coeur__1 {
+  opacity: 0;
+}
+                     /* Animation coeur accueil (index) */
+
+@keyframes anim-coeur {
+  0% {
+    transform: scale(0);
     opacity: 0;
-} 
-                           /* Animation coeur accueil (index) */
-
-@keyframes anim-coeur{
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
-.coeur__1{
-    font-size: 15px;
-    position: absolute;
-    right: 20px;
-    top: 194px;
+.coeur__1 {
+  font-size: 15px;
+  position: absolute;
+  right: 20px;
+  top: 194px;
 }
 
-.coeur__2{
-    font-size: 0px;
-    position: absolute;
-    right: 20px;
-    top: 194px;
-    background: -webkit-linear-gradient(260deg, #9356dc 40%, #ff79da);   
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.coeur__2 {
+  font-size: 0px;
+  position: absolute;
+  right: 20px;
+  top: 194px;
+  background: -webkit-linear-gradient(260deg, #9356dc 40%, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.heart:hover .coeur__2{
-    font-size: 15px;
-    animation: anim-coeur 3s;
+.heart:hover .coeur__2 {
+  font-size: 15px;
+  animation: anim-coeur 3s;
 }
 
-.heart:hover .coeur__1{
-    opacity: 0;
-} 
-                          /* Animation coeur accueil (index)-end */
+.heart:hover .coeur__1 {
+  opacity: 0;
+}
+                     /* Animation coeur accueil (index)-end */
 
-button{
-	padding: 20px;
-    color: white;
-    background: linear-gradient(#ff79da, #9356dc);
-    border-radius: 46px;
-    margin-top: 21px;
-    margin-bottom: 58px;
-    height: 56px;
-    width: 220px;
+button {
+  padding: 20px;
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 46px;
+  margin-top: 21px;
+  margin-bottom: 58px;
+  height: 56px;
+  width: 220px;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0 6px 7px rgb(0 0 0 / 30%);
+}
+                                  /*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgb(83, 80, 80);
+  font-size: 20px;
+}
+
+#title_footer {
+  font-family: "Shrikhand";
+  color: white;
+  padding: 10px 40px 0;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+footer li .fa-solid {
+  padding-right: 10px;
+}
+
+footer a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+footer span {
+  display: flex;
+  font-size: 18px;
+}
+
+.mail {
+  display: flex;
+  margin-top: 13px;
+}
+
+                            /* Media queries */
+
+                             /* Tablette */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  footer {
+    align-items: center;
+  }
+  footer span {
+    padding-left: 8%;
+  }
+  .mail {
+    justify-content: center;
+    margin-right: 22%;
     font-size: 18px;
-    border: none;
-    box-shadow: 0 6px 7px rgb(0 0 0 / 30%);
-
-}
-                   /*FOOTER*/
-                   
-footer{
-	display: flex;
-    flex-direction: column;
-	align-items: flex-start;
-    background: rgb(83, 80, 80);
-    font-size: 20px;
+    line-height: 0.8;
+  }
 }
 
-#title_footer{
-    font-family: 'Shrikhand';
-    color: white;
-    padding: 10px 40px 0;
-    margin-bottom: 20px;
-}
+                            /* deskktop index */
 
-footer ul{
-    list-style-type: none;
-    margin: 0;
-}
-
-footer li .fa-solid{
-   padding-right: 10px;   
-}
-
-footer a{
-    display: flex;
-	color: white;
-	text-decoration: none;
-	margin-bottom: 15px;
-	font-size: 18px;
-}
-
-footer span{
-    display: flex;
-	font-size: 18px;
-}
-
-.mail{
-    display: flex;
-    margin-top: 13px;
-}
-
-               /* Media queries */
- 
-                  /* Tablette */
-
-@media (min-width: 769px) and (max-width: 992px){
-    footer{
-        align-items: center;
-    }        
-    footer span{
-        padding-left: 8%;
-    }            
-    .mail{
-        justify-content: center;
-        margin-right: 22%;
-        font-size: 18px;
-        line-height: 0.8;
-    }
-}    
-
-                 /* deskktop index */
-
-@media (min-width: 993px){
-    footer{
-        align-items: center;
-    }       
-    footer span{
-        padding-left: 8%;
-    }
-    .mail{
-        justify-content: center;
-        margin-right: 22%;
-    }
+@media (min-width: 993px) {
+  footer {
+    align-items: center;
+  }
+  footer span {
+    padding-left: 8%;
+  }
+  .mail {
+    justify-content: center;
+    margin-right: 22%;
+  }
 }

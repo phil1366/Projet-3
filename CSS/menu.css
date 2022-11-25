@@ -1,257 +1,257 @@
-                        /* HEADER */
-header{
-    display: flex;
-    height: 137px;
-    flex-direction: column;
-    background: white;    
+                              /* HEADER */
+header {
+  display: flex;
+  height: 137px;
+  flex-direction: column;
+  background: white;
 }
-                        
-header > img{          /* Images menu */
+
+header > img {              /* Images menu */
   height: 213px;
   object-fit: cover;
   object-position: 0 70%;
   margin-top: 0;
 }
 
-.fa-arrow-left{
+.fa-arrow-left {
   font-weight: 900;
   color: black;
   font-size: 25px;
   position: absolute;
   left: 24px;
   top: 18px;
-}     
-
-                           /* MAIN */
-
-main{
-    background: rgb(238, 235, 235);
-    flex-direction: column;
-    border-radius: 40px 40px 0 0;
-    position: relative;
-    margin-top: -840px; 
 }
 
-.title{
-    margin-top: 952px;
-    font-family: Shrikhand;
-    font-size: 0.9em;
-    margin-left: 22px;
-    padding-top: 39px;
-    text-align: left;
-    margin-bottom: -36px;
+                              /* MAIN */
+
+main {
+  background: rgb(238, 235, 235);
+  flex-direction: column;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  margin-top: -840px;
 }
 
-h1{
-    padding-bottom: 20px;
-    padding-left: 2%;
-    font-size: 25px;
+.title {
+  margin-top: 952px;
+  font-family: Shrikhand;
+  font-size: 0.9em;
+  margin-left: 22px;
+  padding-top: 39px;
+  text-align: left;
+  margin-bottom: -36px;
 }
 
-main h2{
-    font-size: 20px;
-    font-weight: normal;
-    text-align: left;
-    padding-top: 48px;
-    margin-bottom: 41px;
+h1 {
+  padding-bottom: 20px;
+  padding-left: 2%;
+  font-size: 25px;
 }
 
-main h3{    
-    text-align: left;
-    padding-top: 10px;
-    padding-left: 10px;
-    font-size: 21px;
-    margin-bottom: 0;
+main h2 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: left;
+  padding-top: 48px;
+  margin-bottom: 41px;
 }
 
-main p{
-    text-align: left;
-    opacity: .7;
-    padding-left: 10px;
-    margin-top: 0;
-    padding-top: 9px;
+main h3 {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 21px;
+  margin-bottom: 0;
 }
-                       /* MENU */
+
+main p {
+  text-align: left;
+  opacity: 0.7;
+  padding-left: 10px;
+  margin-top: 0;
+  padding-top: 9px;
+}
+                              /* MENU */
 
 .entrees, .plats, .desserts{
-    margin: 0 auto;
-    width: 95%;
-}	
+  margin: 0 auto;
+  width: 95%;
+}
 
-                /* Animation accueil */
+                       /* Animation accueil */
 
-@keyframes SlideUp {  
-    0% {
-      transform: translateY(150px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+@keyframes SlideUp {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
   }
- 
-  .entree_item, .plat_item, .dessert_item *{ 
-    margin: 0;   
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .entree_item, .plat_item, .dessert_item{
-    animation: SlideUp 1s ease-in;
-    animation-fill-mode: backwards;    
-    display: flex;
-    overflow: hidden;     
-    height: 89px;      
-    width: 100%;
-    background-color: white;
-    margin-bottom: 1em;
-    border-radius: 1em;  
-    box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  .delay-1{
-    animation-delay: 1s;
-  }  
-  .delay-2{
-    animation-delay: 1.2s;
-  }  
-  .delay-3{
-    animation-delay: 1.4s;
-  }  
-  .delay-4{
-    animation-delay: 1.6s;
-  }  
-  .delay-5{
-    animation-delay: 1.8s;
-  }  
-  .delay-6{
-    animation-delay: 2.0s;
-  }  
-  .delay-7{
-    animation-delay: 2.2s;
-  } 
-  .delay-8{
-    animation-delay: 2.4s;
-  }
-  .delay-9{
-    animation-delay: 2.6s;
-  } 
-  .delay-10{
-    animation-delay: 2.8s;
-  }
-  
-                        /* Animation bouton vert */
+}
 
-  .entree_text, .plat_text, .dessert_text{           
-    flex: 1;
-    padding: 0.6em;
-    overflow: hidden;    
-    white-space: nowrap;
-    text-overflow: ellipsis;   
-  }
+.entree_item, .plat_item, .dessert_item *{
+  margin: 0;
+}
 
-  .entree_text h3, p, .plat_item h3, p, .dessert_item h3, p{
-    margin-top: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
+.entree_item, .plat_item, .dessert_item {
+  animation: SlideUp 1s ease-in;
+  animation-fill-mode: backwards;
+  display: flex;
+  overflow: hidden;
+  height: 89px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
 
-  .entree_item span, .plat_item span, .dessert_item span{
-    font-weight: bolder;   
-    display: flex;      
-    align-items: flex-end;
-    padding: 1.3em;
-  }
-  
-  .btn{
-    background-color: #99e2d0;   
-    display: flex;  
-    justify-content: center;  
-    align-items: center;
-    overflow: hidden;
-    /*width: 0;*/  
-    transition-duration: 0.6s;
-  }
-  
-  .fa-circle-check{
-    color: #99e2d0;  
-    transform: rotate(360deg);  
-    transition-duration: 0.5s;
-    font-size: 25px;
-  }
-  
- .entrees .entree_item:hover .btn{
-    width: 4em;
-  }
+.delay-1 {
+  animation-delay: 1s;
+}
+.delay-2 {
+  animation-delay: 1.2s;
+}
+.delay-3 {
+  animation-delay: 1.4s;
+}
+.delay-4 {
+  animation-delay: 1.6s;
+}
+.delay-5 {
+  animation-delay: 1.8s;
+}
+.delay-6 {
+  animation-delay: 2s;
+}
+.delay-7 {
+  animation-delay: 2.2s;
+}
+.delay-8 {
+  animation-delay: 2.4s;
+}
+.delay-9 {
+  animation-delay: 2.6s;
+}
+.delay-10 {
+  animation-delay: 2.8s;
+}
 
- .plats .plat_item:hover .btn{
-    width: 4em;
-  }
+                  /* Animation bouton vert */
 
-  .desserts .dessert_item:hover .btn{
-    width: 4em;
-  }
-  
- .entrees .entree_item:hover .fa-circle-check{  
-    transform: rotate(0);
-    color: white;
-  }
+.entree_text, .plat_text, .dessert_text {
+  flex: 1;
+  padding: 0.6em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
-  .plats .plat_item:hover .fa-circle-check{  
-    transform: rotate(0);
-    color: white;
-  }
+.entree_text h3, p, .plat_item h3, p, .dessert_item h3, p{
+  margin-top: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
-  .desserts .dessert_item:hover .fa-circle-check{  
-    transform: rotate(0);
-    color: white;
-  }
-                         /* Animation bouton vert-end */
+.entree_item span, .plat_item span, .dessert_item span{
+  font-weight: bolder;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.3em;
+}
 
-  .entrees h2, .plats h2 .dessert h2{   
-    padding-top: 25px;
-    position: relative;   
-  }
+.btn {
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 0;
+  transition-duration: 0.6s;
+}
 
-  .entrees h2::after{
-    content: "";    
-    background-color: #99e2d0; 
-    height: 4px;
-    width: 37px;
-    position: absolute;
-    top: 56px;
-    left: 0px;
-  }
+.fa-circle-check {
+  color: #99e2d0;
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+  font-size: 25px;
+}
 
-  .plats h2::after{
-    content: "";
-    position: absolute;
-    top: 578px; 
-    left: 3%;   
-    height: 4px;
-    width: 37px;
-    background-color: #99e2d0; 
-  } 
+.entrees .entree_item:hover .btn {
+  width: 4em;
+}
 
-.plats__lanote h2::after{
+.plats .plat_item:hover .btn {
+  width: 4em;
+}
+
+.desserts .dessert_item:hover .btn {
+  width: 4em;
+}
+
+.entrees .entree_item:hover .fa-circle-check {
+  transform: rotate(0);
+  color: white;
+}
+
+.plats .plat_item:hover .fa-circle-check {
+  transform: rotate(0);
+  color: white;
+}
+
+.desserts .dessert_item:hover .fa-circle-check {
+  transform: rotate(0);
+  color: white;
+}
+                       /* Animation bouton vert-end */
+
+.entrees h2, .plats h2 .dessert h2 {
+  padding-top: 25px;
+  position: relative;
+}
+
+.entrees h2::after {
   content: "";
-  position: absolute;
-  top: 682px; 
-  left: 3%;   
+  background-color: #99e2d0;
   height: 4px;
   width: 37px;
-  background-color: #99e2d0; 
+  position: absolute;
+  top: 56px;
+  left: 0px;
 }
-.desserts h2::after{
+
+.plats h2::after {
   content: "";
   position: absolute;
-  top: 1008px;   
-  left: 3%;    
+  top: 578px;
+  left: 3%;
   height: 4px;
   width: 37px;
   background-color: #99e2d0;
 }
-.dessert__lanote h2::after{
+
+.plats__lanote h2::after {
+  content: "";
+  position: absolute;
+  top: 682px;
+  left: 3%;
+  height: 4px;
+  width: 37px;
+  background-color: #99e2d0;
+}
+.desserts h2::after {
+  content: "";
+  position: absolute;
+  top: 1008px;
+  left: 3%;
+  height: 4px;
+  width: 37px;
+  background-color: #99e2d0;
+}
+.dessert__lanote h2::after {
   content: "";
   position: absolute;
   top: 1112px;
@@ -261,29 +261,30 @@ main p{
   background-color: #99e2d0;
 }
 
-#title_footer{
-    margin-top: 20px;}                      
-
-                          /* Animation menus */         
-
-@keyframes appear{
-  0% {transform: translateY(800px);}
-  100% {transform: translateY(0);}
+#title_footer {
+  margin-top: 20px;
 }
 
-.entrees{
-    animation: appear;
-    animation-duration: 1s;    
+                            /* Animation menus */
+
+@keyframes appear {
+  0% {
+    transform: translateY(800px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.plats{
-    animation: appear;
-    animation-duration: 2s;
+.entrees {
+  animation: appear;
+  animation-duration: 1s;
 }
-.desserts{
-    animation: appear;
-    animation-duration: 3s;
+.plats {
+  animation: appear;
+  animation-duration: 2s;
 }
-
-              
-  
+.desserts {
+  animation: appear;
+  animation-duration: 3s;
+}
