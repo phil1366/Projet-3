@@ -13,10 +13,21 @@ img{
     width: 100%;
 }
                           /* LOADER */
-body{
-    animation: appear ease-in;
-    animation-duration: 3s;
-    animation-delay: 5s;    
+
+#loaderContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    -webkit-animation: appear 6s ease-in;
+    animation: appear 6s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .loader{    
@@ -25,32 +36,27 @@ body{
     border-top: 16px solid #9356dc;
     border-right: 16px solid #99E2D0;
     border-bottom: 16px solid #FF79DA;
-    border-left: 16px solid #99E2D0;
-    position: absolute;
-    width: 120px;
+    border-left: 16px solid #99E2D0;        
+    width: 100px;
     height: 120px;
-    display: flex;
-    margin-left: 40%;
-    -webkit-animation: appear 1s, spin 4s linear;   
-    animation: appear 1s, spin 4s, fade-out 3s;  
-    
-    transition-duration: 20s ease-out;   
+    animation: spin 3s ease-in-out;
+    -webkit-animation: spin 3s ease-in-out;          
 }
 
 @keyframes appear{
-    0% { opacity: 0;}
-    100% { opacity: 1;}
+    50% { opacity: 1;}
+    100% { opacity: 0; visibility: hidden;}
 }
-
+ 
 @keyframes fade-out{
     100% { opacity: 1;}
     0% { opacity: 0;}
 }
- 
+
 @keyframes spin{
     0% { transform: rotate(0deg) scale(0); }
-    50% { transform: rotate(0deg) scale(0.5)}
-    100% { transform: rotate(360deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1);}
+    100% { transform: rotate(360deg) scale(1.5); }
 }
 
 
