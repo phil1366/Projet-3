@@ -80,7 +80,7 @@ form .fa-location-dot{
 form input[type="search"]{
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 10px;
     font-weight: bolder;
 }
